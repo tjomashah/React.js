@@ -1,5 +1,5 @@
 import React from 'react'
-import './Modal.css'
+import '../Modal/Modal.css'
 
 export default class Modal extends React.Component {
     constructor() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ToDoItem from './ToDoItem'
+import ToDoItem from '../ToDO/ToDoItem'
 
 const styles = {
     ul: {
