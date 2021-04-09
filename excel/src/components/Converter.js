@@ -71,7 +71,7 @@ class Converter extends React.Component {
   }
 
   render() {
-    console.log(this.state.data) //log
+    //console.log(this.state.data) //log
 
     return (
       <div>

@@ -12,13 +12,10 @@ class Upload extends React.Component {
 
   onChange(event) {
     let file = event.target.files[0]
-    console.log(file)
     let reader = new FileReader()
-    reader.onload = function (event) {
-      file = event.target.result
-      //   console.log(file)
+    reader.onload = (event) => {
+      console.log(event.target.result)
     }
-
     reader.readAsText(file)
   }
 
@@ -26,7 +23,7 @@ class Upload extends React.Component {
     return (
       <div>
         <input type="file" name="myFile" onChange={this.onChange} />
-        <div>{this.state.file}</div>
+        {/* {this.state.file} */}
       </div>
     )
   }
