@@ -11,6 +11,7 @@ class ExcelParse {
         this.excel_file_path = excel_file_path;
         this.parsed = {};
         this.startParse();
+        
     }
 
     startParse = () => {
