@@ -1,7 +1,5 @@
 // import axios from 'axios'
 import React from 'react'
-// import { CSVLink, CSVDownload } from 'react-csv'
-// import '../files/calls.csv'
 import file from '../files/res.json'
 
 // const fetchData = (path, callback) => {
@@ -21,8 +19,8 @@ class Converter extends React.Component {
 
   componentDidMount() {
     let data = []
-
     const extentions = Object.keys(file)
+    //console.log(extentions)
 
     let index = 1
 
@@ -32,7 +30,7 @@ class Converter extends React.Component {
 
       const months = Object.keys(file[currentExt])
 
-      // console.log(months);
+      //console.log(months)
 
       for (let j = 0; j < months.length; j++) {
         const currentMonth = months[j]
@@ -48,6 +46,7 @@ class Converter extends React.Component {
         index++
       }
     }
+    //console.log(data)
 
     this.setState({ data })
   }
@@ -61,6 +60,7 @@ class Converter extends React.Component {
     }
 
     let csvString = auxData.join('%0A')
+    //console.log(csvString)
 
     let a = document.createElement('a')
     a.href = 'data:attachment/csv,' + csvString
@@ -72,20 +72,24 @@ class Converter extends React.Component {
 
   render() {
     //console.log(this.state.data) //log
-
     return (
       <div>
         <button
           className="btn btn-dark"
-          style={{ margin: '0px 0px 15px 15px' }}
+          style={{
+            margin: '15px 0px 0px 25px',
+            position: 'absolute',
+            top: 0,
+            left: '80%',
+          }}
           onClick={() => {
             this.parseJSon()
           }}
         >
-          Export
+          Export to '.csv'
         </button>
 
-        <table
+        {/* <table
           className="table table-bordered table-hover"
           style={{ width: 800, textAlign: 'center' }}
         >
@@ -100,7 +104,7 @@ class Converter extends React.Component {
               )
             })}
           </tbody>
-        </table>
+        </table> */}
       </div>
     )
   }

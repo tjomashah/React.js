@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px;
+}
+
+.wrapper-input {
+    width: 35vw;
+    margin-right: 2vw;
+}
+
+.wrapper-table {
+    padding: 0 21vw;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-input {
+        width: 30vw;
+    }
+
+    .wrapper-btn {
+        font-size: 4vw;
+        height: 12vw;
+        width: 40vw;
+        margin: 5vw 0 0 !important;
+    }
+    .wrapper-table {
+        padding: 0 5vw;
+    }
+}
