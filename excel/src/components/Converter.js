@@ -89,7 +89,7 @@ class Converter extends React.Component {
           Export to '.csv'
         </button>
 
-        {/* <table
+        <table
           className="table table-bordered table-hover"
           style={{ width: 800, textAlign: 'center' }}
         >
@@ -104,7 +104,7 @@ class Converter extends React.Component {
               )
             })}
           </tbody>
-        </table> */}
+        </table>
       </div>
     )
   }
