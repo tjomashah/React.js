@@ -1,0 +1,28 @@
+.router {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(89, 110, 117);
+    
+}
+.nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+}
+
+.nav-links li {
+    color: white;
+}
+
+.logo {
+    width: 50%;
+    padding-left: 50px;
+}

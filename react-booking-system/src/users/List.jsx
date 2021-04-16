@@ -22,9 +22,9 @@ function List({ match }) {
     }
 
     return (
-        <div>
-            <h1>Users</h1>
-            <Link to={`${path}/add`} className="btn btn-sm btn-success mb-2">Add User</Link>
+        <div style={{padding: '30px 50px'}}>
+            <h2 style={{paddingBottom: '10px'}}>Customers</h2>
+            <Link to={`${path}/add`} className="btn btn-sm btn-success mb-2">Add Customer</Link>
             <table className="table table-striped">
                 <thead>
                     <tr>
@@ -41,8 +41,11 @@ function List({ match }) {
                             <td>{user.email}</td>
                             <td>{user.role}</td>
                             <td style={{ whiteSpace: 'nowrap' }}>
-                                <Link to={`${path}/edit/${user.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
-                                <button onClick={() => deleteUser(user.id)} className="btn btn-sm btn-danger btn-delete-user" disabled={user.isDeleting}>
+                                <Link to={`${path}/edit/${user.id}`} 
+                                className="btn btn-sm btn-primary mr-1">Edit</Link>
+                                <button onClick={() => deleteUser(user.id)} 
+                                className="btn btn-sm btn-danger btn-delete-user" 
+                                disabled={user.isDeleting}>
                                     {user.isDeleting 
                                         ? <span className="spinner-border spinner-border-sm"></span>
                                         : <span>Delete</span>
@@ -61,7 +64,7 @@ function List({ match }) {
                     {users && !users.length &&
                         <tr>
                             <td colSpan="4" className="text-center">
-                                <div className="p-2">No Users To Display</div>
+                                <div className="p-2">No Customers To Display</div>
                             </td>
                         </tr>
                     }

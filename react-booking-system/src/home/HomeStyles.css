@@ -1,0 +1,25 @@
+.home {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.home_logo {
+    width: 300px;
+}
+
+.home_header {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 170px;
+    font-size: 70px;
+}
+
+.home_subheader {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #3f3f3f;
+    letter-spacing: 2px;
+}

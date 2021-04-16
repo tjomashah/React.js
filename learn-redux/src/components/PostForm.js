@@ -3,7 +3,6 @@ import {connect} from 'react-redux'
 import {createPost, showAlert} from '../redux/actions'
 import { Alert } from './Alert'
 
-
 class PostForm extends React.Component {
     constructor() {
         super()
@@ -16,7 +15,7 @@ class PostForm extends React.Component {
         event.preventDefault()
 
         const {title} = this.state
-
+        
         if (!title.trim()) {
             return this.props.showAlert(`This field cannot be empty`)
         }

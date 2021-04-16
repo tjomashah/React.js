@@ -1,0 +1,58 @@
+ [
+    {
+        "id": 1,
+        "img": "../images/room-1.png",
+        "type": "Single room",
+        "price": 100,
+        "description": "Standart room, courtyard view"
+    },
+    {
+        "id": 2,
+        "img": "../images/room-2.png",
+        "type": "Single room",
+        "price": 100,
+        "description": "Standart room, courtyard view"
+    },
+    {
+        "id": 3,
+        "img": "../images/room-3.png",
+        "type": "Queen size",
+        "price": 150,
+        "description": "Nice room, courtyard view"
+    },
+    {
+        "id": 4,
+        "img": "../images/room-4.png",
+        "type": "Queen size",
+        "price": 150,
+        "description": "Nice room, courtyard view"
+    },
+    {
+        "id": 5,
+        "img": "../images/room-6.png",
+        "type": "Deluxe",
+        "price": 200,
+        "description": "Good room, sea view"
+    },
+    {
+        "id": 6,
+        "img": "../images/room-7.png",
+        "type": "Deluxe",
+        "price": 200,
+        "description": "Good room, sea view"
+    },
+    {
+        "id": 7,
+        "img": "../images/room-11.png",
+        "type": "Presidential suite",
+        "price": 300,
+        "description": "Very nice room, sea view, first coast line"
+    },
+    {
+        "id": 8,
+        "img": "../images/room-12.png",
+        "type": "Presidential suite",
+        "price": 300,
+        "description": "Very nice room, sea view, first coast line"
+    }
+]
