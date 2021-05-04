@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table, Space, Button } from 'antd'
-import tableData from './TableData'
+import tableData from './tableData'
 
 const tabledata1 = tableData.map((item) => item.column_1)
 const tabledata2 = tableData.map((item) => item.column_2)
@@ -34,7 +34,7 @@ const columns = [
     key: tabledata5.map((item) => item.key),
     render: (text, record) => (
       <Space size="middle">
-        <a>Pay to {record.bank}</a>
+        <a>Sent sms to {record.client}</a>
         <Button
           style={{
             width: '1.7vw',
@@ -60,30 +60,31 @@ const tablerow3 = tableData.map((item) => item.row_3)
 const data = [
   {
     key: tablerow1.map((item) => item.key),
-    bank: tablerow1.map((item) => item.bank),
-    auto: tablerow1.map((item) => item.auto),
-    file: tablerow1.map((item) => item.file),
-    created: tablerow1.map((item) => item.created),
+    client: tablerow1.map((item) => item.client),
+    method: tablerow1.map((item) => item.method),
+    status: tablerow1.map((item) => item.status),
+    send: tablerow1.map((item) => item.send),
   },
   {
     key: tablerow2.map((item) => item.key),
-    bank: tablerow2.map((item) => item.bank),
-    auto: tablerow2.map((item) => item.auto),
-    file: tablerow2.map((item) => item.file),
-    created: tablerow2.map((item) => item.created),
+    client: tablerow2.map((item) => item.client),
+    method: tablerow2.map((item) => item.method),
+    status: tablerow2.map((item) => item.status),
+    send: tablerow2.map((item) => item.send),
   },
   {
     key: tablerow3.map((item) => item.key),
-    bank: tablerow3.map((item) => item.bank),
-    auto: tablerow3.map((item) => item.auto),
-    file: tablerow3.map((item) => item.file),
-    created: tablerow3.map((item) => item.created),
+    client: tablerow3.map((item) => item.client),
+    method: tablerow3.map((item) => item.method),
+    status: tablerow3.map((item) => item.status),
+    send: tablerow3.map((item) => item.send),
   },
 ]
 
 function CreateTable() {
   return (
     <>
+      <h3 style={{ margin: '3vw 0' }}>Notifications title</h3>
       <Table
         style={{
           width: '80vw',

@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { Button } from 'antd'
-import { PlusOutlined } from '@ant-design/icons'
+import { PlusCircleOutlined } from '@ant-design/icons'
 import Content from './Content'
-import Content2 from './Content2'
 
-function Create() {
+function BtnCreate() {
   const [show, isShow] = useState('Create')
 
   const showContent = () => {
-    isShow(show == 'Create' ? 'Exit' : 'Create')
+    isShow(show == 'Create' ? 'Save' : 'Create')
   }
 
   return (
@@ -24,41 +23,28 @@ function Create() {
               alignItems: 'center',
             }}
           >
-            <PlusOutlined />
+            <PlusCircleOutlined />
             {show}
           </Button>
         </div>
-        {show == 'Exit' && (
+        {show == 'Save' && (
           <div>
             <Content />
 
             <div>
-              <Button
+              <button
+                className="btn btn-success"
                 onClick={showContent}
                 style={{
-                  backgroundColor: 'orange',
+                  width: '5vw',
                   zIndex: 1,
                   position: 'fixed',
-                  bottom: '9vw',
+                  bottom: '12vw',
                   right: '14vw',
                 }}
               >
                 {show}
-              </Button>
-            </div>
-            <div>
-              <Button
-                onClick={showContent}
-                style={{
-                  backgroundColor: 'lightgrey',
-                  zIndex: 1,
-                  position: 'fixed',
-                  bottom: '9vw',
-                  right: '22vw',
-                }}
-              >
-                Send
-              </Button>
+              </button>
             </div>
           </div>
         )}
@@ -67,4 +53,4 @@ function Create() {
   )
 }
 
-export default Create
+export default BtnCreate

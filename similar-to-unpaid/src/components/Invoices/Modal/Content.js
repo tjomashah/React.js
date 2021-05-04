@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { Select, Input, Button, Upload, Form, Space } from 'antd'
-import GetTimePicker from './TimePicker/getTimePicker'
+import { Select, Input, Button, Form, Avatar } from 'antd'
+import { UserOutlined, FilterOutlined } from '@ant-design/icons'
 import './styles/Modal.css'
 import MessageTemplate from './MessageTemplate/MessageTemplate'
-import { UploadOutlined } from '@ant-design/icons'
 import data from './Data'
 
 const { Option } = Select
@@ -24,33 +23,42 @@ function Content(props) {
       <Form onSubmit={onSubmit}>
         <div className="modal">
           <div className="modal-body">
+            <div>
+              <Avatar
+                size={40}
+                style={{
+                  padding: 7,
+                  backgroundColor: '#87d068',
+                  borderRadius: '50%',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  margin: '1vw 0',
+                }}
+                icon={<UserOutlined />}
+              />
+              <hr style={{ marginBottom: '1vw' }} />
+            </div>
             <div className="modal-content">
               <div className="modal-file">
-                <label htmlFor="choose">Choose file</label>
-
-                {/* <Select
+                <label htmlFor="choose">Invoice code</label>
+                <Select
                   id="choose"
                   showSearch
                   style={{ width: '35vw', backgroundColor: 'lightgrey' }}
                   optionFilterProp="children"
                 >
                   <Option
-                    value={data.map((item) => item.select_1.file)}
+                    value={data.map((item) => item.select_1.code)}
                   ></Option>
                   <Option
-                    value={data.map((item) => item.select_2.file)}
+                    value={data.map((item) => item.select_2.code)}
                   ></Option>
                   <Option
-                    value={data.map((item) => item.select_3.file)}
+                    value={data.map((item) => item.select_3.code)}
                   ></Option>
-                </Select> */}
-                <Space>
-                  <Upload>
-                    <Button style={{ width: '35vw' }}>
-                      <UploadOutlined /> Upload file
-                    </Button>
-                  </Upload>
-                </Space>
+                </Select>
               </div>
               <div className="modal-templ">
                 <label htmlFor="tamplate">Template</label>
@@ -116,20 +124,6 @@ function Content(props) {
               </div>
             </div>
 
-            <div className="modal-content">
-              <GetTimePicker />
-              <div className="modal-send">
-                <label htmlFor="fee" defaultValue="7.5">
-                  Unpaid Fee
-                </label>
-
-                <Input
-                  id="fee"
-                  type="number"
-                  style={{ width: '35vw', marginTop: '0.3vw' }}
-                />
-              </div>
-            </div>
             <MessageTemplate />
             <div>
               <Button
@@ -138,7 +132,7 @@ function Content(props) {
                   backgroundColor: 'lightgrey',
                   zIndex: 1,
                   position: 'fixed',
-                  bottom: '13vw',
+                  bottom: '14vw',
                   right: '14vw',
                 }}
               >

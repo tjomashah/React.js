@@ -9,8 +9,11 @@ function Header() {
     <>
       <div className="header-content">
         <div>
-          <img src={logo} width="100" alt={'Logo'} />
+          <a href="https://delinternet.com/" target="_blank">
+            <img src={logo} width="100" alt={'Logo'} />
+          </a>
         </div>
+
         <div>
           <Avatar
             size={40}

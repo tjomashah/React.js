@@ -12,7 +12,7 @@
 }
 
 .modal-body {
-    padding:  3vw 4vw;
+    padding:  1vw 4vw;
     border-radius: 0.5vw;
     background-color: white;
     z-index: -5;
@@ -32,6 +32,10 @@
     flex-direction: row;
     justify-content: space-between;
     border: none;
-    margin-bottom: 3vw;
+    margin-bottom: 1vw;
+}
+
+label {
+    margin-bottom: 0.2vw;
 }
 

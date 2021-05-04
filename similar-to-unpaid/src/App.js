@@ -1,9 +1,9 @@
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Switch, NavLink } from 'react-router-dom'
 import Importer from './components/Importer/Importer'
 import Invoices from './components/Invoices/Invoices'
-import Notifications from './components/Notifications'
-import Banks from './components/Banks'
-import Templates from './components/Templates'
+import Notifications from './components/Notifications/Notifications'
+import Banks from './components/Banks/Banks'
+import Templates from './components/Templates/Templates'
 import Login from './components/AuthLogin/Login'
 import userToken from './components/AuthLogin/UseToken'
 import './App.css'
@@ -25,29 +25,54 @@ function App() {
         <nav className="nav justify-content-center">
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <Link className="nav-link" to="/importer">
+              <NavLink
+                exact
+                className="active"
+                className="nav-link"
+                to="/importer"
+              >
                 Importer
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-link" to="/invoices">
+              <NavLink
+                exact
+                className="active"
+                className="nav-link"
+                to="/invoices"
+              >
                 Invoices
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-link" to="/notifications">
+              <NavLink
+                exact
+                className="active"
+                className="nav-link"
+                to="/notifications"
+              >
                 Notifications
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-link" to="/banks">
+              <NavLink
+                exact
+                className="active"
+                className="nav-link"
+                to="/banks"
+              >
                 Banks
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-link" to="/templates">
+              <NavLink
+                exact
+                className="active"
+                className="nav-link"
+                to="/templates"
+              >
                 Templates
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -59,13 +84,13 @@ function App() {
           <Route path="/invoices">
             <Invoices />
           </Route>
-          <Route path="/banks">
+          <Route path="/notifications">
             <Notifications />
           </Route>
-          <Route path="/templates">
+          <Route path="/banks">
             <Banks />
           </Route>
-          <Route path="/notifications">
+          <Route path="/templates">
             <Templates />
           </Route>
         </Switch>

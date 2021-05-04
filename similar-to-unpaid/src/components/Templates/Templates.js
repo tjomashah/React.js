@@ -1,9 +1,12 @@
+import Modal from './Modal/Modal'
 import React from 'react'
+import TempTable from './Table/TemplTable'
 
 function Templates() {
   return (
     <div>
-      <h2>Templates</h2>
+      <Modal />
+      <TempTable />
     </div>
   )
 }

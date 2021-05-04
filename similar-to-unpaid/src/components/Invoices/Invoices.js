@@ -1,9 +1,12 @@
+import Modal from './Modal/Modal'
 import React from 'react'
+import InvoiceTable from './Table/InvoiceTable'
 
 function Invoices() {
   return (
     <div>
-      <h3>Invoices</h3>
+      <Modal />
+      <InvoiceTable />
     </div>
   )
 }

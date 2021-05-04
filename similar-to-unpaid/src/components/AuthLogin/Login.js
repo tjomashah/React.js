@@ -1,20 +1,18 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types' //2
+import PropTypes from 'prop-types'
 import '../../App.css'
 
 async function loginUser(credentials) {
   return fetch('http://localhost:4010/login', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+
     body: JSON.stringify(credentials),
   }).then((data) => data.json())
 }
 
 function Login({ setToken }) {
-  const [email, setEmail] = useState() // create state
-  const [password, setPassword] = useState() //....
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
