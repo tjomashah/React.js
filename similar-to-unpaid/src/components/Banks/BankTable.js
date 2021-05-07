@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, Button, Form } from 'antd'
+import { Input, Form } from 'antd'
 import './styles/bank.css'
 
 function Content() {

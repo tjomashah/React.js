@@ -1,3 +1,29 @@
+// import React, { useState } from 'react'
+
+// function User() {
+//   const [firstName, setFirstName] = useState()
+//   const [lastName, setLastName] = useState()
+
+//   handleCkickFirstName = (e) => {
+//     setFirstName(e.target.value)
+//   }
+
+//   handleCkickLasttName = (e) => {
+//     setLasttName(e.target.value)
+//   }
+
+//   return (
+//     <div>
+//       <input />
+//       <input />
+//       <h5>Your name is </h5>
+//       <h5>Your surname is </h5>
+//     </div>
+//   )
+// }
+
+// export default User
+
 import React, { useState, useEffect } from 'react'
 
 function Form() {

@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types' //2
 import '../../App.css'
 
 async function loginUser(credentials) {
-  return fetch('http://localhost:4010/login', {
+  return fetch('http://localhost:8080/login', {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(credentials),
   }).then((data) => data.json())
 }
 
 function Login({ setToken }) {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+  const [email, setEmail] = useState() // create state
+  const [password, setPassword] = useState() //....
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -27,11 +30,9 @@ function Login({ setToken }) {
       <h4 className="login-header">Please, login</h4>
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="mb-3">
-          <div>
-            <label className="form-label" htmlFor="email">
-              Email
-            </label>
-          </div>
+          <label className="form-label" htmlFor="email">
+            Email
+          </label>
           <input
             className="form-control form-control-sm"
             id="email"
@@ -39,11 +40,9 @@ function Login({ setToken }) {
           />
         </div>
         <div>
-          <div>
-            <label className="form-label" htmlFor="password">
-              Password
-            </label>
-          </div>
+          <label className="form-label" htmlFor="password">
+            Password
+          </label>
           <input
             className="form-control form-control-sm"
             type="password"

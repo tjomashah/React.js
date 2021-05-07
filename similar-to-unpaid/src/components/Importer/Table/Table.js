@@ -1,6 +1,7 @@
 import React from 'react'
 import { Table, Space, Button } from 'antd'
 import tableData from './TableData'
+import './table.css'
 
 const tabledata1 = tableData.map((item) => item.column_1)
 const tabledata2 = tableData.map((item) => item.column_2)

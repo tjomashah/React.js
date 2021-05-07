@@ -4,11 +4,10 @@ import GetTimePicker from './TimePicker/getTimePicker'
 import './styles/Modal.css'
 import MessageTemplate from './MessageTemplate/MessageTemplate'
 import { UploadOutlined } from '@ant-design/icons'
-import data from './Data'
 
 const { Option } = Select
 
-function Content(props) {
+function Content() {
   const [file, setFile] = useState('')
 
   const handleChange = (e) => {
@@ -28,22 +27,6 @@ function Content(props) {
               <div className="modal-file">
                 <label htmlFor="choose">Choose file</label>
 
-                {/* <Select
-                  id="choose"
-                  showSearch
-                  style={{ width: '35vw', backgroundColor: 'lightgrey' }}
-                  optionFilterProp="children"
-                >
-                  <Option
-                    value={data.map((item) => item.select_1.file)}
-                  ></Option>
-                  <Option
-                    value={data.map((item) => item.select_2.file)}
-                  ></Option>
-                  <Option
-                    value={data.map((item) => item.select_3.file)}
-                  ></Option>
-                </Select> */}
                 <Space>
                   <Upload>
                     <Button style={{ width: '35vw' }}>

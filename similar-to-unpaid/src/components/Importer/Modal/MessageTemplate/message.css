@@ -5,10 +5,9 @@
 }
 
 .message-field {
-    width: 62vw;
-    height: 13vw;
+    width: 63vw;
+    height: 10vw !important;
     resize: horizontal;
     max-width: 64vw;
     padding: 0.5vw;
-    
 }

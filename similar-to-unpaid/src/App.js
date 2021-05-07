@@ -10,8 +10,6 @@ import './App.css'
 import Header from './components/Header'
 
 function App() {
-  //const [token, setToken] = useState() this delete
-  //const token = getToken() // this added with 2 func (setToken, getToken) => changed to str-22
   const { token, setToken } = userToken()
 
   if (!token) {
