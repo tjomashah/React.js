@@ -1,0 +1,13 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-field {
+    width: 63vw;
+    height: 10vw !important;
+    resize: horizontal;
+    max-width: 64vw;
+    padding: 0.5vw;
+}

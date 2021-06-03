@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+.table {
+  padding: 0 23px !important;
+  background-color: #f8f9fa !important;
+  padding-bottom: 6.5rem !important;
+}

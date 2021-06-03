@@ -3,16 +3,6 @@ import { Role } from './'
 export function configureFakeBackend() {
     // array in local storage for user records
     let users = JSON.parse(localStorage.getItem('users')) 
-    // || [{ 
-    //     id: 1,
-    //     title: 'Mr',
-    //     firstName: 'Joe',
-    //     lastName: 'Bloggs',
-    //     email: 'joe@bloggs.com',
-    //     role: Role.User,
-    //     password: 'joe123'
-    // }];
-
     // monkey patch fetch to setup fake backend
     let realFetch = window.fetch;
     window.fetch = function (url, opts) {

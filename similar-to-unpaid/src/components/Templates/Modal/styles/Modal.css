@@ -1,0 +1,41 @@
+.template {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    padding: 9vw 10vw;
+    z-index: 1;
+}
+
+.template-body {
+    padding:  2vw 4vw;
+    border-radius: 0.5vw;
+    background-color: rgb(248, 248, 248);
+    z-index: -5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.template-file, .template-templ, .template-bank, .template-send {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.template-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 1vw;
+}
+
+label {
+    margin-bottom: 0.2vw;
+}
+

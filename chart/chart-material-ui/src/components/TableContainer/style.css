@@ -1,0 +1,28 @@
+.fa-plus-circle {
+  color: limegreen;
+}
+.fa-plus-circle.mod {
+  color: red;
+}
+
+.MuiTableCell-head {
+  font-weight: bold !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+}
+
+.table-span {
+  margin-right: 0.7rem;
+  font-size: 14px !important;
+  color: rgb(170, 169, 169) !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.table-p {
+  font-size: 14px !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}

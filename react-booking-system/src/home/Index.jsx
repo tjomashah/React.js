@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import logo from '../images/logo.svg'
+import './HomeStyles.css'
 
 function Home() {
     return (
-        <div>
-            <h1>React - CRUD Example with React Hook Form</h1>
-            <p>An example app showing how to list, add, edit and delete user records with React and the React Hook Form library.</p>
-            <p><Link to="users">&gt;&gt; Manage Users</Link></p>
+        <div className="home">
+            <img className="home_logo animate__animated animate__fadeInDownBig" 
+            src={logo} alt={'logo'}/>
+            <h1 className="home_header animate__animated animate__fadeInLeftBig"
+            >Hotel Booking</h1>
+            <h4 className="home_subheader animate__animated animate__fadeInUpBig"
+            >Are you looking for best hotels? Go on!</h4>
         </div>
     );
 }

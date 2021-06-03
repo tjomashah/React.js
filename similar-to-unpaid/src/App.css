@@ -1,0 +1,82 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav {
+  background-color: rgb(243, 241, 241);
+  padding: 0.5vw 0;
+  list-style: none;
+}
+
+.nav .nav-pills {
+  width: 60vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color:  rgb(75, 69, 69);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(247, 162, 58);
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  
+}
+
+.form-control {
+  width: 20vw;
+  padding: 0.5vw 0 0.5vw 0.5vw;
+}
+
+.form-label {
+  margin-bottom: 1vw;
+}
+
+.btn {
+  margin: 2vw 0 0 ;
+}
+
+.login-header {
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
+.login-form {
+  border: 1px solid black;
+  padding: 4vw;
+  background-color: rgb(253, 251, 251);
+}
+
+.header-content {
+  padding: 0.5vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(252, 251, 251);
+}
+
+.button-create {
+  float: right;
+  margin: 3vw 10vw 1vw 0;
+}
+
+.active {
+  color: rgb(247, 162, 58);
+}

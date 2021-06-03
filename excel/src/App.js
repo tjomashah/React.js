@@ -1,14 +1,14 @@
-import React from 'react'
-import Converter from './components/Converter'
-import Upload from './components/Upload'
+import React from "react";
+// import Converter from './components/Converter'
+import Upload from "./components/Upload";
 
 function App() {
   return (
-    <div style={{ paddingLeft: 110 }}>
+    <div style={{ display: "flex" }}>
       <Upload />
-      <Converter />
+      {/* <Converter /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

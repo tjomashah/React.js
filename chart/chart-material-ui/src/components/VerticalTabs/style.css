@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #37424a;
+}
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8vw;
+  padding-left: 4vw;
+}
+/* .active {
+  display: flex;
+  align-items: center;
+  background-color: rgb(248, 247, 247);
+  padding-left: 4vw;
+} */

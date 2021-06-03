@@ -1,0 +1,6 @@
+.MuiTabs-flexContainer {
+  justify-content: space-between !important;
+}
+.MuiTabs-root {
+  min-height: 0 !important;
+}

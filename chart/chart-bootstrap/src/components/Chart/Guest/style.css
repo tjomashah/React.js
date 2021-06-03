@@ -1,0 +1,89 @@
+.guest-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+.guest-content {
+  display: flex;
+  align-items: center;
+}
+
+.guest-name {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+.trash {
+  background-color: #feeee8;
+  padding: 4px 8px;
+}
+
+.guest-pos {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+  color: lightgrey;
+  padding-left: 5px;
+}
+
+.pos {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.MuiInput-underline:before {
+  border-bottom: none !important;
+}
+
+.MuiInputBase-inputAdornedEnd {
+  width: 78px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+.MuiFormControl-marginNormal {
+  margin: 5px 0 0 !important;
+}
+
+/* Show date picker */
+.MuiIconButton-root {
+  display: none !important;
+}
+
+.hiring {
+  font-size: 14px;
+  font-weight: 400;
+  color: lightgrey;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+.years {
+  margin-top: 4px;
+  padding: 2px;
+  margin-left: 10px;
+  color: #2e5bff;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgba(191, 191, 197, 0.3);
+}
+
+.work {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0 0 35px;
+}
+.mod-row {
+  padding: 20px 23px;
+  background-color: #f8f9fa;
+}
+
+.mod-col {
+  background-color: white;
+  padding-bottom: 15px;
+}
