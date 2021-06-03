@@ -1,8 +1,6 @@
 // import axios from 'axios'
-import React from 'react'
-// import { CSVLink, CSVDownload } from 'react-csv'
-// import '../files/calls.csv'
-import file from '../files/res.json'
+import React from "react";
+import file from "../files/res.json";
 
 // const fetchData = (path, callback) => {
 //   axios
@@ -13,98 +11,103 @@ import file from '../files/res.json'
 
 class Converter extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
-
       data: [],
-    }
+    };
   }
 
   componentDidMount() {
-    let data = []
+    let data = [];
+    const extentions = Object.keys(file);
+    //console.log(extentions)
 
-    const extentions = Object.keys(file)
-
-    let index = 1
+    let index = 1;
 
     for (let i = 0; i < extentions.length; i++) {
-      const currentExt = extentions[i]
-      const currentExtMonths = file[currentExt]
+      const currentExt = extentions[i];
+      const currentExtMonths = file[currentExt];
 
-      const months = Object.keys(file[currentExt])
+      const months = Object.keys(file[currentExt]);
 
-      // console.log(months);
+      //console.log(months)
 
       for (let j = 0; j < months.length; j++) {
-        const currentMonth = months[j]
+        const currentMonth = months[j];
 
-        const ext = currentExt // 666
-        const month = currentMonth // January
-        const price = currentExtMonths[month].toFixed(2) // 0.0585
+        const ext = currentExt; // 666
+        const month = currentMonth; // January
+        const price = currentExtMonths[month].toFixed(2); // 0.0585
 
         // TODO do something
 
-        data.push([index, ext, month, price])
+        data.push([index, ext, month, price]);
 
-        index++
+        index++;
       }
     }
+    //console.log(data)
 
-    this.setState({ data })
+    this.setState({ data });
   }
 
   parseJSon() {
-    const tableHeader = [['№', 'extension', 'month', 'price']]
-    let auxData = this.state.data
+    const tableHeader = [["№", "extension", "month", "price"]];
+    let auxData = this.state.data;
 
     for (let i = 0; i < tableHeader.length; i++) {
-      auxData.unshift(tableHeader[i].join(','))
+      auxData.unshift(tableHeader[i].join(","));
     }
 
-    let csvString = auxData.join('%0A')
+    let csvString = auxData.join("%0A");
+    //console.log(csvString)
 
-    let a = document.createElement('a')
-    a.href = 'data:attachment/csv,' + csvString
-    a.target = '_blank'
-    a.download = 'calls.csv'
-    document.body.appendChild(a)
-    a.click()
+    let a = document.createElement("a");
+    a.href = "data:attachment/csv," + csvString;
+    a.target = "_blank";
+    a.download = "calls.csv";
+    document.body.appendChild(a);
+    a.click();
   }
 
   render() {
     //console.log(this.state.data) //log
-
     return (
       <div>
         <button
           className="btn btn-dark"
-          style={{ margin: '0px 0px 15px 15px' }}
+          style={{
+            margin: "15px 0px 0px 25px",
+            position: "absolute",
+            top: 0,
+            left: "80%",
+          }}
           onClick={() => {
-            this.parseJSon()
+            this.parseJSon();
           }}
         >
-          Export
+          Export to '.csv'
         </button>
 
         <table
           className="table table-bordered table-hover"
-          style={{ width: 800, textAlign: 'center' }}
+          style={{ width: 800, textAlign: "center" }}
         >
           <tbody>
             {this.state.data.map((record, index) => {
               return (
                 <tr>
                   {Object.keys(record).map((row, key) => {
-                    return <td>{record[row]}</td>
+                    return <td>{record[row]}</td>;
                   })}
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
       </div>
-    )
+    );
   }
 }
 
-export default Converter
+export default Converter;
