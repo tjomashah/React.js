@@ -1,0 +1,21 @@
+.blue-container {
+  /* width: 20vw; */
+  background-color: #2e5bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 0;
+}
+
+.content {
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > * {
+  padding: 0;
+}
+.row {
+  --bs-gutter-x: 0;
+}

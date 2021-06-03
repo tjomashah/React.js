@@ -1,0 +1,285 @@
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MuiInput-formControl {
+  margin-top: 0 !important;
+}
+.chart-work-type {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.chart-header-content {
+  display: flex;
+  align-items: center;
+}
+
+.mod-col_nine {
+  padding: 15px 10px 0;
+}
+
+/* chart */
+.diagramm-schedule > div:first-child {
+  width: 98%;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-right: none;
+}
+.diagramm-schedule > div:nth-child(2),
+.diagramm-schedule > div:nth-child(3),
+.diagramm-schedule > div:nth-child(4),
+.diagramm-schedule > div:last-child {
+  width: 98%;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-right: none;
+  border-top: none;
+}
+.diagramm-schedule > div:first-child::before {
+  content: "10";
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.diagramm-schedule > div:first-child::after {
+  content: "|";
+  position: absolute;
+  top: -19px;
+  left: -2.2px;
+  width: 1px;
+  height: 15px;
+  color: rgb(202, 201, 201);
+}
+.diagramm-schedule > div:nth-child(2)::before {
+  content: "8";
+  position: absolute;
+  top: -10px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.diagramm-schedule > div:nth-child(3)::before {
+  content: "6";
+  position: absolute;
+  top: -10px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.diagramm-schedule > div:nth-child(4)::before {
+  content: "4";
+  position: absolute;
+  top: -10px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.diagramm-schedule > div:nth-child(5)::before {
+  content: "2";
+  position: absolute;
+  top: -10px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.diagramm-schedule > div:nth-child(5)::after {
+  content: "0";
+  position: absolute;
+  bottom: -15px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  color: rgb(145, 144, 144);
+}
+.chart {
+  bottom: 0;
+}
+.first {
+  bottom: 0;
+  left: 80px;
+  width: 17px;
+  height: 180px;
+  background-color: limegreen;
+}
+.first::before {
+  content: "10 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.second {
+  bottom: 0;
+  left: 0px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.second::before {
+  content: "11 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.third {
+  bottom: 0;
+  left: -65px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.third::before {
+  content: "12 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fourth {
+  bottom: 0;
+  left: -130px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.fourth::before {
+  content: "13 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fifth {
+  bottom: 0;
+  left: -100px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.fifth::before {
+  content: "14 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sixth {
+  bottom: 0;
+  left: -75px;
+  width: 17px;
+  height: 120px;
+  background-color: red;
+}
+.sixth::before {
+  content: "15 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.seventh {
+  bottom: 0;
+  left: -50px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.seventh::before {
+  content: "16 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.eith {
+  bottom: 0;
+  left: -30px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.eith::before {
+  content: "17 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ninth {
+  bottom: 0;
+  left: 0px;
+  width: 17px;
+  height: 160px;
+  background-color: blue;
+}
+.ninth::before {
+  content: "18 April";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: -7px;
+  text-align: center;
+  color: #959eb1;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}

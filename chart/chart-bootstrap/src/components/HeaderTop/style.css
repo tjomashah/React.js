@@ -1,0 +1,44 @@
+.menu {
+  background-color: #d5deff;
+  padding: 10px 13px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+.MuiInputBase-root {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 35px !important;
+  margin-left: 10px;
+}
+
+.header {
+  padding: 3px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.notification {
+  position: relative;
+  margin-right: 20px;
+}
+.notification::after {
+  content: "2";
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
