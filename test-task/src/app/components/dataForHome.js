@@ -1,7 +1,8 @@
 export const data = {
   home: {
     logo: "https://www.pngkey.com/png/detail/140-1407365_spacex-dragon-cots-demo-1-logo-space-x.png",
-    title: "Upcoming Spaceflight Launches",
+    title: "Upcoming ",
+    title_2: "Spaceflight Launches",
     subtitle:
       "View all launches available - including launches from the past and utilize powerful search filters.",
     button_name: "Show All Launches",
@@ -12,17 +13,20 @@ export const data = {
           {
             src: "https://techstory.in/wp-content/uploads/2020/06/in-this-spacex-handout-image-a-falcon-9-rocket-carrying-the-news-photo-1591219555-scaled.jpg",
             date: "Dec. 6, 2020, 6:17 p.m.",
-            info: "Falcon 9 Block 5 | Dragon CRS-2 SpX-21",
+            info: "Falcon 9 Block 5 | Dragon",
+            subinfo: "CRS-2 SpX-21",
           },
           {
             src: "https://spacenews.com/wp-content/uploads/2018/02/fh-launch-spx.jpg",
             date: "Dec. 6, 2020, 6:17 p.m.",
-            info: "Falcon 9 Block 5 | Dragon CRS-2 SpX-21",
+            info: "Falcon 9 Block 5 | Dragon",
+            subinfo: "CRS-2 SpX-21",
           },
           {
             src: "https://www.teslarati.com/wp-content/uploads/2020/02/Pad-39A-mobile-service-tower-renders-SpaceX-Falcon-Heavy-stretched-fairing-1.jpg",
             date: "Dec. 6, 2020, 6:17 p.m.",
-            info: "Falcon 9 Block 5 | Dragon CRS-2 SpX-21",
+            info: "Falcon 9 Block 5 | Dragon",
+            subinfo: "CRS-2 SpX-21",
           },
         ],
         subtitle: "Spaceflight Launches",
