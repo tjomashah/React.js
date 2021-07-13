@@ -1,4 +1,5 @@
 import React from "react";
+import Page_content from "../page_content";
 import { makeStyles, Typography, Box, Card, Button } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -13,15 +14,15 @@ const useStyles = makeStyles({
     color: "#C0C0C0",
     margin: "4rem 0 2rem",
   },
-  button: {
-    background: "linear-gradient(93.72deg, #8E2DE2 9.41%, #4A00E0 86.1%)",
-    borderRadius: "3rem",
-    color: "#fff",
-    padding: "1rem 3.5rem",
-    fontFamily: "Montserrat",
-    fontWeight: 800,
-    fontSize: "1.2rem",
-  },
+  // button: {
+  //   background: "linear-gradient(93.72deg, #8E2DE2 9.41%, #4A00E0 86.1%)",
+  //   borderRadius: "3rem",
+  //   color: "#fff",
+  //   padding: "1rem 3.5rem",
+  //   fontFamily: "Montserrat",
+  //   fontWeight: 800,
+  //   fontSize: "1.2rem",
+  // },
   card: {
     padding: "7rem 0 7rem 7rem",
   },
@@ -41,9 +42,9 @@ const Content = (props) => {
       <Typography className={classes.subtitle} variant="body1">
         {subtitle}
       </Typography>
-      <Button className={classes.button} variant="outlined">
+      {/* <Button className={classes.button} variant="outlined">
         {button_name}
-      </Button>
+      </Button> */}
     </Box>
   );
 };

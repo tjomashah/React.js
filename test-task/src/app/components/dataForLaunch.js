@@ -1,13 +1,8 @@
 export const dataLaunch = {
   header: {
     back: "Back To Home",
-    descr: [
-      {
-        title_1: "Falcon 9 Block 5 |",
-        title_2: "Dragon CRS-2 SpX-21",
-        subtitle: "Go for Launch",
-      },
-    ],
+    descr: ["Falcon 9 Block 5 |", "Dragon CRS-2 SpX-21"],
+    subtitle: "Go for Launch",
   },
   content_1: {
     title: "Overview",
